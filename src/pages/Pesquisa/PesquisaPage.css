@@ -1,0 +1,18 @@
+.pesquisa-page { padding: 1.5rem; }
+.pesquisa-page .page-header { margin-bottom: 2rem; }
+.research-stats .stat-mini-card { min-height: 92px; }
+.research-table-container { overflow-x: auto; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, .06); }
+.research-table-container table { margin-bottom: 0; min-width: 800px; }
+.research-table-container td, .research-table-container th { vertical-align: middle; padding: 1rem; }
+.research-table-container td:first-child { min-width: 280px; }
+.research-table-container td small { display: block; color: #777; margin-top: .3rem; max-width: 340px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.research-status-info, .research-status-warning, .research-status-success, .research-status-danger { color: white; }
+.research-status-info { background: #2196f3; }
+.research-status-warning { background: #f0ad00; }
+.research-status-success { background: #299b67; }
+.research-status-danger { background: #e74c3c; }
+.research-empty { text-align: center; padding: 4rem 1rem; background: white; border-radius: 10px; color: #777; }
+.research-empty i { font-size: 3rem; color: #bbb; }
+.research-empty h3 { margin: 1rem 0 .5rem; color: #555; }
+.research-review-actions { display: flex; gap: .75rem; margin-top: 1.5rem; }
+@media (max-width: 767.98px) { .pesquisa-page { padding: 1rem; } .research-table-container { margin: 0 -1rem; border-radius: 0; } }

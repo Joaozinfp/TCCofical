@@ -1,0 +1,12 @@
+.processos-page { padding: 1.5rem; }
+.process-stats .stat-mini-card { min-height: 92px; }
+.process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.25rem; }
+.process-card { background: white; border-radius: 10px; padding: 1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.process-card-header, .process-card-footer, .process-dates { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+.process-card h3 { font-size: 1.12rem; margin: 1rem 0 .5rem; }
+.process-card p { color: #6d6d6d; min-height: 62px; line-height: 1.5; }
+.process-candidates, .process-dates { color: #777; font-size: .82rem; }
+.process-dates { border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: .75rem 0; margin: 1rem 0; }
+.process-status-aberto, .process-status-open { background: #299b67; color: white; }.process-status-em-análise { background: #f0ad00; color: white; }.process-status-fechado, .process-status-resultado-publicado { background: #718096; color: white; }
+.process-empty { text-align: center; padding: 4rem 1rem; background: white; border-radius: 10px; color: #777; }.process-empty i { font-size: 3rem; color: #bbb; }.process-empty h3 { margin: 1rem 0 .5rem; color: #555; }
+@media (max-width: 767.98px) { .processos-page { padding: 1rem; } .process-dates { align-items: flex-start; flex-direction: column; } }

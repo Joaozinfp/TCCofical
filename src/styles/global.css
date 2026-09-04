@@ -1,0 +1,331 @@
+:root {
+  --eecoe-primary: #2E7D32;
+  --eecoe-primary-light: #388E3C;
+  --eecoe-primary-mid: #4CAF50;
+  --eecoe-primary-soft: #81C784;
+  --eecoe-primary-bg: #F1F8E9;
+  --eecoe-white: #FFFFFF;
+  --eecoe-dark: #1B1B1B;
+  --eecoe-gray: #666666;
+  --eecoe-light-gray: #f8f9fa;
+  --eecoe-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --eecoe-shadow-hover: 0 4px 16px rgba(0,0,0,0.12);
+  --eecoe-border-radius: 12px;
+  --eecoe-transition: all 0.3s ease;
+  --eecoe-font: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--eecoe-font);
+  color: var(--eecoe-dark);
+  background-color: var(--eecoe-light-gray);
+  overflow-x: hidden;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+body.dark-mode .card {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+}
+
+body.dark-mode .navbar {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .modal-content {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+}
+
+body.dark-mode .dashboard-page {
+  background-color: #151515;
+}
+
+body.dark-mode .dashboard-header,
+body.dark-mode .header-search input,
+body.dark-mode .notification-menu,
+body.dark-mode .table-container,
+body.dark-mode .filters-bar,
+body.dark-mode .empty-state,
+body.dark-mode .form-container {
+  background-color: #242424;
+  color: #f5f5f5;
+}
+
+body.dark-mode .dashboard-header,
+body.dark-mode .header-search input,
+body.dark-mode .search-box input,
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode .table,
+body.dark-mode .table > :not(caption) > * > * {
+  border-color: #4a4a4a;
+}
+
+body.dark-mode .header-search input,
+body.dark-mode .search-box input,
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #303030;
+  color: #f5f5f5;
+}
+
+body.dark-mode .header-search input::placeholder,
+body.dark-mode .search-box input::placeholder,
+body.dark-mode .form-control::placeholder {
+  color: #aaa;
+}
+
+body.dark-mode .dashboard-title,
+body.dark-mode .dashboard-welcome,
+body.dark-mode .card-title,
+body.dark-mode .stat-value,
+body.dark-mode .stat-label,
+body.dark-mode .activity-content h6,
+body.dark-mode .event-details h6,
+body.dark-mode .table,
+body.dark-mode .form-label {
+  color: #f5f5f5;
+}
+
+body.dark-mode .activity-content p,
+body.dark-mode .activity-time,
+body.dark-mode .event-details p,
+body.dark-mode .form-text,
+body.dark-mode .notification-content p,
+body.dark-mode .table thead,
+body.dark-mode .table td,
+body.dark-mode .table th {
+  color: #c4c4c4;
+}
+
+body.dark-mode .card,
+body.dark-mode .stat-card,
+body.dark-mode .activity-item,
+body.dark-mode .event-item {
+  background-color: #242424;
+  color: #f5f5f5;
+}
+
+body.dark-mode .card-header,
+body.dark-mode .notification-header,
+body.dark-mode .notification-item {
+  border-color: #4a4a4a;
+}
+
+body.dark-mode .calendar-day,
+body.dark-mode .calendar-day-header {
+  color: #d5d5d5;
+}
+
+body.dark-mode .loading-container,
+body.dark-mode .visitacao-page,
+body.dark-mode .pesquisa-page,
+body.dark-mode .projetos-page,
+body.dark-mode .processos-page,
+body.dark-mode .agenda-page,
+body.dark-mode .materiais-page,
+body.dark-mode .perfil-page,
+body.dark-mode .config-page {
+  color: #f5f5f5;
+}
+
+body.dark-mode .landing-page {
+  background-color: #fff;
+  color: var(--eecoe-dark);
+}
+
+body.dark-mode .stat-mini-card,
+body.dark-mode .project-card,
+body.dark-mode .process-card,
+body.dark-mode .material-card,
+body.dark-mode .agenda-list,
+body.dark-mode .agenda-summary,
+body.dark-mode .research-table-container,
+body.dark-mode .research-empty,
+body.dark-mode .project-empty,
+body.dark-mode .process-empty,
+body.dark-mode .material-empty {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+}
+
+body.dark-mode .page-title,
+body.dark-mode .project-card h3,
+body.dark-mode .process-card h3,
+body.dark-mode .agenda-section-heading h2,
+body.dark-mode .agenda-event-content h3 {
+  color: #f5f5f5;
+}
+
+body.dark-mode .page-subtitle,
+body.dark-mode .project-card p,
+body.dark-mode .process-card p,
+body.dark-mode .agenda-event-content p {
+  color: #c4c4c4;
+}
+
+/* Keep page-specific light backgrounds from overriding the dark theme. */
+body.dark-mode .dashboard-page .profile-card,
+body.dark-mode .dashboard-page .stat-mini-card,
+body.dark-mode .dashboard-page .project-card,
+body.dark-mode .dashboard-page .process-card,
+body.dark-mode .dashboard-page .material-card,
+body.dark-mode .dashboard-page .agenda-list,
+body.dark-mode .dashboard-page .agenda-summary,
+body.dark-mode .dashboard-page .research-table-container,
+body.dark-mode .dashboard-page .research-empty,
+body.dark-mode .dashboard-page .project-empty,
+body.dark-mode .dashboard-page .process-empty,
+body.dark-mode .dashboard-page .material-empty,
+body.dark-mode .dashboard-page .empty-state,
+body.dark-mode .dashboard-page .table-container {
+  background-color: #2d2d2d !important;
+  color: #f5f5f5;
+}
+
+body.dark-mode .dashboard-page .research-table-container .table,
+body.dark-mode .dashboard-page .table-container .table {
+  --bs-table-bg: #2d2d2d;
+  --bs-table-color: #f5f5f5;
+  --bs-table-hover-bg: #383838;
+  --bs-table-hover-color: #ffffff;
+  color: #f5f5f5;
+}
+
+body.dark-mode .dashboard-page .research-table-container .table > :not(caption) > * > *,
+body.dark-mode .dashboard-page .table-container .table > :not(caption) > * > * {
+  background-color: #2d2d2d !important;
+  color: #f5f5f5 !important;
+  border-color: #4a4a4a;
+}
+
+body.dark-mode .dashboard-page .profile-card h2,
+body.dark-mode .dashboard-page .profile-card label,
+body.dark-mode .dashboard-page .profile-card p,
+body.dark-mode .dashboard-page .profile-card span,
+body.dark-mode .dashboard-page .profile-card strong,
+body.dark-mode .dashboard-page .research-table-container td small,
+body.dark-mode .dashboard-page .material-content p,
+body.dark-mode .dashboard-page .material-content small,
+body.dark-mode .dashboard-page .process-candidates,
+body.dark-mode .dashboard-page .process-dates,
+body.dark-mode .dashboard-page .agenda-section-heading span {
+  color: #d0d0d0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Transitions */
+.fade-in {
+  animation: fadeInUp 0.6s ease;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.6s ease;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s ease;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: var(--eecoe-transition);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--eecoe-shadow-hover);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--eecoe-primary-soft);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--eecoe-primary);
+}
+
+/* Focus visible */
+:focus-visible {
+  outline: 3px solid var(--eecoe-primary);
+  outline-offset: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--eecoe-primary);
+  color: white;
+  padding: 8px;
+  z-index: 2000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Paisagem ecológica</title>
+  <desc id="desc">Ilustração de uma paisagem verde com montanhas, árvores e céu ensolarado.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a9d8e8"/><stop offset="1" stop-color="#f8df9b"/></linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#438b5c"/><stop offset="1" stop-color="#174d3c"/></linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#sky)"/>
+  <circle cx="965" cy="130" r="72" fill="#f2c14e"/>
+  <path d="M0 430 245 190l185 190 170-220 310 260 150-130 140 150v270H0Z" fill="#397a61"/>
+  <path d="M0 500c180-95 315-45 470 10 180 65 325-36 470-32 115 3 184 51 260 33v189H0Z" fill="url(#ground)"/>
+  <g fill="#154d3c"><path d="M150 540 205 350l55 190Z"/><path d="M245 560 300 325l60 235Z"/><path d="M1020 570 1075 340l60 230Z"/><path d="M900 570 950 375l55 195Z"/></g>
+  <g fill="#f2c14e"><circle cx="212" cy="348" r="22"/><circle cx="305" cy="323" r="24"/><circle cx="1078" cy="338" r="23"/><circle cx="952" cy="372" r="20"/></g>
+</svg>
